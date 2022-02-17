@@ -24,6 +24,8 @@
     {{ end }}
 {{ end }}
 
+{{ partial "theme-switcher.html" . }}   
+
 {{ if .Site.Params.rssAsSocialIcon }}
     {{ with .Site.Home.OutputFormats.Get "rss" -}}
         <li>

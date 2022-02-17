@@ -38,7 +38,7 @@ skipToContent:
   other: "Skip to main content"
 
 darkTheme:
-  other: "Dark theme"
+  other: " "
 
 lightTheme:
-  other: "Light theme"
+  other: " "
