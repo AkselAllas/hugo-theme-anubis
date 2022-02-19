@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 {{ $dataTheme := "" }}
-{{ if eq site.Params.style "dark-without-switcher" }}
-    {{ $dataTheme = "dark" }}
+{{ if eq site.Params.style "light-without-switcher" }}
+    {{ $dataTheme = "light" }}
 {{ end }}
 <html lang="{{ .Site.LanguageCode }}" data-theme="{{ $dataTheme }}">
 <head>

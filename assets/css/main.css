@@ -1,5 +1,5 @@
-{{ $light := resources.Get "css/light.css" }}
 {{ $dark := resources.Get "css/dark.css" }}
+{{ $light := resources.Get "css/light.css" }}
 
 {{ $light.Content }}
 
@@ -8,7 +8,7 @@
     {{ $dark.Content }}
 }
 {{ else if eq site.Params.style "auto-without-switcher" }}
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
     :root {
         {{ $dark.Content }}
     }
@@ -226,6 +226,7 @@ header nav:not(:empty){
     max-width: 100%;
     text-align: center;
     padding: 0.5em 0;
+    border-radius: 15px;
 }
 
 header nav a {
