@@ -2,6 +2,9 @@
    /* light.css */ 
     --font-color: #333;
     --bg-color: #fff;
+    --scrollbar-color: #f1f1f1;
+    --scrollbar-thumb-color: #c1c1c1;
+    --code-background: #e8e8e8;
 
     --link-color:#1d60a3;
     --link-state-color:#a31d1d;
@@ -29,4 +32,8 @@
 
     --svg-color: #333;
     --svg-state-color: #a31d1d;
+    --hljs-type: #800;
+    --hljs-variable: #ab5656;
+    --hljs-literal: #695;
+    --hljs-comment: #697070;
 }

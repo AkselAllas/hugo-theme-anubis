@@ -19,6 +19,127 @@
 }
 {{ end }}
 
+/* pre code scrollbar */
+pre code {
+ display: block;
+ overflow-x: auto;
+ word-wrap: break-word;
+ word-break: break-all;
+ --scrollbar: var(--scrollbar-color);
+ --thumb: var(--scrollbar-thumb-color);
+ }
+pre code::-webkit-scrollbar {
+ width: 18px;
+ }
+pre code {
+ scrollbar-color: var(--thumb) var(--scrollbar);
+ }
+pre code::-webkit-scrollbar-track {
+ background: var(--scrollbar);
+ }
+pre code::-webkit-scrollbar-thumb {
+ background-color: var(--thumb);
+ border: 3px solid var(--scrollbar);
+ }
+code pre kbd {
+ color: var(--font-color);
+ }
+
+/* Highlight.js */
+pre code.hljs {
+	display: block;
+	overflow-x: auto;
+	padding: 0 1em;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'
+}
+
+code.hljs {
+	padding: 3px 5px
+}
+
+.hljs {
+	background: var(--hljs-background);
+	color: var(--hljs-color);
+}
+
+.hljs-comment {
+	color: var(--hljs-comment);
+}
+
+.hljs-punctuation,
+.hljs-tag {
+	color: var(--hljs-tag);
+}
+
+.hljs-tag .hljs-attr,
+.hljs-tag .hljs-name {
+	color: var(--hljs-name);
+}
+
+.hljs-attribute,
+.hljs-doctag,
+.hljs-keyword,
+.hljs-meta .hljs-keyword,
+.hljs-name,
+.hljs-selector-tag {
+	font-weight: 700
+}
+
+.hljs-deletion,
+.hljs-number,
+.hljs-quote,
+.hljs-selector-class,
+.hljs-selector-id,
+.hljs-string,
+.hljs-template-tag,
+.hljs-type {
+	color: var(--hljs-type);
+}
+
+.hljs-section,
+.hljs-title {
+	color: var(--hljs-type);
+	font-weight: 700
+}
+
+.hljs-link,
+.hljs-operator,
+.hljs-regexp,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-symbol,
+.hljs-template-variable,
+.hljs-variable {
+	color: var(--hljs-variable);
+}
+
+.hljs-literal {
+	color: var(--hljs-literal);
+}
+
+.hljs-addition,
+.hljs-built_in,
+.hljs-bullet,
+.hljs-code {
+	color: var(--hljs-code);
+}
+
+.hljs-meta {
+	color: var(--hljs-meta);
+}
+
+.hljs-meta .hljs-string {
+	color: var(--hljs-string);
+}
+
+.hljs-emphasis {
+	font-style: italic
+}
+
+.hljs-strong {
+	font-weight: 700
+}
+
 /* Basic */
 html {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -143,20 +264,16 @@ th, td {
 }
 
 /* Code */
-pre {
-    padding: 1em;
-    max-width: 100%;
-    overflow: auto;
+code {
+    background-color: var(--code-background);
 }
-
-code,
-pre,
-kbd {
+pre {
     color: var(--pre-color);
     background-color: var(--pre-bg-color);
-    font-family: monospace;
-    font-size: 0.90em;
-    line-height: 154%;
+    padding: 0em 1em;
+    max-width: 100%;
+    overflow: auto;
+    margin: 0;
 }
 
 pre code, pre kbd {

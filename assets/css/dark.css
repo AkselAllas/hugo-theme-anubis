@@ -1,6 +1,9 @@
 /* dark.css */ 
 --font-color: #eee;
 --bg-color: #29292b;
+--scrollbar-color: #201f23;
+--scrollbar-thumb-color: #777779;
+--code-background: #616161;
 
 --link-color:#599ada;
 --link-state-color:#ff5858;
@@ -13,7 +16,7 @@
 --nav-link-color: #b6b6b6;
 
 --pre-color: #ccc;
---pre-bg-color: #1b1b1b;
+--pre-bg-color: #212121;
 
 --bq-color: #ccc;
 --hr-color: #333;
@@ -28,3 +31,8 @@
 
 --svg-color: #ccc;
 --svg-state-color:#ff5858;
+
+--hljs-type: #b6c043;
+--hljs-variable: #ab5656;
+--hljs-literal: #695;
+--hljs-comment: #697070;
